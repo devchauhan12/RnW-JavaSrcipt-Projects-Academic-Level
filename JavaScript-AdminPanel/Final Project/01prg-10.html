@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- Fevicon -->
+    <link rel="icon" href="assets/Images/favicon (3).png" type="image/x-icon">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!-- Calendar css -->
+    <link rel="stylesheet" href="assets/css/calendarjs.css">
+
+    <!-- media css -->
+    <link rel="stylesheet" href="assets/css/media.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo-details text-center">
+            <img class="light-1 di-none d-lg-inline" src="assets/Images/logo.png" alt="" width="62%">
+            <img class="light-2 di-none ms-1" src="assets/Images/favicon (3).png" width="90%" alt="">
+        </div>
+        <ul class="nav-links p-0">
+            <li class="nav-sides">Dashboard</li>
+            <li class="nav-slides">
+                <a href="index.html" class="d-flex align-items-center">
+                    <span class="nav-icons">
+                        <i class="bi bi-cast"></i>
+                    </span>
+                    <span class="link_name">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-sides mt-3">Applications</li>
+            <li class="nav-slides" id="Apps">
+                <a href="#" class="d-flex active align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-icons">
+                            <i class="bi bi-box"></i>
+                        </span>
+                        <span class="link_name">TSK-1</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+            </li>
+            <ul class="Blocks ps-0 di-none">
+                <li class="nav-slides">
+                    <a href="cards.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-1</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="chat.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-2</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="contacts.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-3</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="calendar.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-4</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-5.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-5</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-6.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-6</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-7.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-7</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="#" class="d-flex active align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-8</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-9.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-9</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-10.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-10</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-11.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-11</span>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </aside>
+
+    <!-- Main-Header Start -->
+    <header>
+        <div class="Home-section dashboard-header w-100">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="home-content">
+                    <i class="bi bi-text-left"></i>
+                </div>
+                <div>
+                    <img src="assets/Images/logo.png" class="d-lg-none" width="100%" alt="">
+                </div>
+                <div class="d-flex align-items-center">
+                    <ul class="header d-sm-none d-lg-flex m-0 h-100 justify-content-between align-items-center">
+                        <li><a href="#" class="header-icons m-2" id="Country" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-globe"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end Country" aria-labelledby="Country">
+                                <li><a class="dropdown-item" href="#"><img src="assets/Images/France.png" alt="">
+                                        French</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="assets/Images/germany-flags-png-picture.png" alt=""> Germany</a></li>
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="assets/Images/italia-flag-miscellaneous-angle-flag.png" alt="">
+                                        Italy</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img src="assets/Images/Russia.png" alt="">
+                                        Russia</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img src="assets/Images/Spain.png" alt="">
+                                        Spain</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="header-icons m-2"><i class="bi bi-moon"></i></a></li>
+                        <li>
+                            <a href="#" class="header-icons m-2" id="Search" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-search"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end rounded-0 border-0 p-2" aria-labelledby="Search">
+                                <li>
+                                    <div class="form-group has-search">
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                        <input type="text" class="form-control shadow-none" placeholder="Search">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="header-icons m-2"><i class="bi bi-cart"><span
+                                        class="badge bg-warning rounded-circle top-0 position-absolute end-0">4</span></i></a>
+                        </li>
+                        <li><a href="#" class="header-icons m-2" onclick="toggleFullScreen(document.body)"><i
+                                    class="bi bi-fullscreen"></i></a></li>
+                        <li>
+                            <a href="#" class="header-icons m-2" id="Notification" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bell"></i>
+                                <span class="pulse bg-danger"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end rounded-0 border-0 p-2"
+                                aria-labelledby="Notification">
+                                <li>
+                                    <div class="form-group has-search">
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                        <input type="text" class="form-control shadow-none" placeholder="Search">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="position-relative p-2"><a href="#" class="user-icon d-block position-relative"><img
+                                    src="assets/Images/1.jpg" class="rounded-circle profile-img" alt=""></a></li>
+                        <li>
+                            <a href="#" class="header-icons m-2" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="bi bi-text-right fs-4"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <li class="d-flex">
+                        <a href="#" class="header-icons m-2 d-lg-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </a>
+                    </li>
+
+                    <li class="d-flex">
+                        <a href="#" class="header-icons m-2 " type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#Settings" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-gear settings"></i>
+                        </a>
+                    </li>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="Main-Content position-relative margin-lg-start">
+            <!-- Dashboard Start -->
+            <section class="Dashboard d-flex justify-content-center">
+                <!-- Row 1 -->
+                <div class="card1 mt-5">
+                    <div class="card-info">
+                        <div class="login-box">
+                            <form class="pt-2">
+                                <div class="user-box">
+                                    <input type="number" name="" required="" id="alpha">
+                                    <label>Input Amount</label>
+                                </div>
+                                <div class="user-box">
+                                    <h5 id="Result"></h5>
+                                </div>
+                                <a class="ms-1 mb-2" onclick="check()" href="#">
+                                    Check
+                                    <span></span>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 1 -->
+            </section>
+            <!-- Dashboard End -->
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/Slider.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Fullscreen Js Start
+            function toggleFullScreen(elem) {
+                if ((document.fullScreenElement !== undefined && document.fullScreenElement == null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement == null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+                    if (elem.requestFullScreen) {
+                        elem.requestFullScreen();
+                    } else if (elem.mozRequestFullScreen) {
+                        elem.mozRequestFullScreen();
+                    } else if (elem.webkitRequestFullScreen) {
+                        elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                    } else if (elem.msRequestFullscreen) {
+                        elem.msRequestFullscreen();
+                    }
+                } else {
+                    if (document.cancelFullScreen) {
+                        document.cancelFullScreen();
+                    } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                    } else if (document.webkitCancelFullScreen) {
+                        document.webkitCancelFullScreen();
+                    } else if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                    }
+                }
+            };
+            // Fullscreen Js End
+        })
+        if ($(window).width() < 992) {
+            $(".bi-text-left").click(function () {
+                $("aside").toggleClass("Depre");
+            });
+        };
+
+        // Alphabet
+
+        function check() {
+            const basicSalary = document.getElementById('alpha').value;
+            let hraPercentage, daPercentage;
+            let hra, da
+            if (basicSalary <= 10000) {
+                hra = basicSalary * 0.2;
+                da = basicSalary * 0.8;
+            } else if (basicSalary > 10000 && basicSalary <= 20000) {
+                hra = basicSalary * 0.25;
+                da = basicSalary * 0.9;
+            } else {
+                hra = basicSalary * 0.3;
+                da = basicSalary * 0.95;
+            }
+
+            const grossSalary = parseInt(basicSalary) + parseInt(hra) + parseInt(da);
+
+            document.getElementById('Result').innerHTML = 'Total grossSalary is ' +  grossSalary;
+
+        }
+
+        // Alphabet
+
+    </script>
+
+</body>
+
+</html>

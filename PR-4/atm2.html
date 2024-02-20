@@ -1,0 +1,74 @@
+<style>
+    /* CSS Styles */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #0074D9;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #accountBalance {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>ATM Interface</h2>
+
+        <label for="accountNumber">Account Number:</label>
+
+        <input type="text" id="accountNumber" placeholder="Enter Account Number">
+
+        <label for="PIN">PIN:</label>
+
+        <input type="text" id="PIN" placeholder="Enter PIN">
+
+        <label for="amount">Amount to Withdraw:</label>
+
+        <input type="number" id="amount" placeholder="Enter Amount">
+
+        <button id="withdrawButton">Withdraw</button>
+
+        <div id="cashWithdrawn">
+            Cash Withdrawn: <span id="cashDrawer">0</span>
+        </div>
+        
+        <div id="accountBalance">
+            Account Balance: 0
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/atm.js"></script>

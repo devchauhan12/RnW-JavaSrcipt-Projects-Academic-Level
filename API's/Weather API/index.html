@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBox | Mobile Inbox UI</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <div class="iphone">
+            <div class="container h-100">
+                <div class="inbox ps-1 pe-1">
+                    <div class="status-bar position-relative overflow-hidden">
+                        <div class="d-flex justify-content-between">
+                            <div class="left-side">1:41</div>
+                            <div class="right-side">
+                                <svg class="icon-mobile-signal" width="18" height="13" viewBox="0 0 18 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.68977 3.30767C9.68977 2.71291 10.1236 2.23075 10.6588 2.23075H11.6277C12.1629 2.23075 12.5967 2.71291 12.5967 3.30767V11.9231C12.5967 12.5178 12.1629 13 11.6277 13H10.6588C10.1236 13 9.68977 12.5178 9.68977 11.9231V3.30767Z"
+                                        fill="white" />
+                                    <path
+                                        d="M14.5347 1.15383C14.5347 0.559059 14.9685 0.0769043 15.5036 0.0769043H16.4726C17.0078 0.0769043 17.4416 0.559059 17.4416 1.15383V11.9231C17.4416 12.5178 17.0078 13 16.4726 13H15.5036C14.9685 13 14.5347 12.5178 14.5347 11.9231V1.15383Z"
+                                        fill="white" />
+                                    <path
+                                        d="M4.84489 7.0769C4.84489 6.48214 5.27871 5.99998 5.81386 5.99998H6.78284C7.31799 5.99998 7.75182 6.48214 7.75182 7.0769V11.9231C7.75182 12.5178 7.31799 13 6.78284 13H5.81386C5.27871 13 4.84489 12.5178 4.84489 11.9231V7.0769Z"
+                                        fill="white" />
+                                    <path
+                                        d="M0 9.76921C0 9.17444 0.433826 8.69229 0.968977 8.69229H1.93795C2.47311 8.69229 2.90693 9.17444 2.90693 9.76921V11.9231C2.90693 12.5178 2.47311 13 1.93795 13H0.968977C0.433826 13 0 12.5178 0 11.9231V9.76921Z"
+                                        fill="white" />
+                                </svg>
+                                <svg class="wifi" width="17" height="13" viewBox="0 0 17 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.43012 2.86347C10.8202 2.86359 13.1188 3.90542 14.851 5.77363C14.9814 5.91787 15.1899 5.91605 15.3183 5.76955L16.5652 4.342C16.6302 4.2677 16.6665 4.16706 16.666 4.06234C16.6654 3.95763 16.6281 3.85747 16.5623 3.78404C12.016 -1.15881 4.84356 -1.15881 0.297198 3.78404C0.231341 3.85742 0.193974 3.95754 0.193367 4.06226C0.19276 4.16698 0.228962 4.26765 0.293962 4.342L1.54117 5.76955C1.66955 5.91627 1.8782 5.91809 2.00856 5.77363C3.74094 3.9053 6.03985 2.86347 8.43012 2.86347ZM8.46466 7.26256C9.77783 7.26247 11.0441 7.81619 12.0175 8.81614C12.1492 8.95805 12.3566 8.95498 12.4849 8.8092L13.7303 7.38166C13.7959 7.30678 13.8323 7.2052 13.8314 7.09964C13.8304 6.99409 13.7922 6.89337 13.7253 6.82002C10.7611 3.69199 6.17072 3.69199 3.20654 6.82002C3.13958 6.89337 3.10138 6.99414 3.1005 7.09973C3.09962 7.20531 3.13614 7.30688 3.20187 7.38166L4.44692 8.8092C4.57526 8.95498 4.78265 8.95805 4.91431 8.81614C5.88706 7.81685 7.15236 7.26317 8.46466 7.26256ZM10.9972 10.1383C10.9991 10.2442 10.9625 10.3462 10.8958 10.4204L8.74154 12.8868C8.67839 12.9593 8.59229 13.0001 8.50246 13.0001C8.41262 13.0001 8.32652 12.9593 8.26337 12.8868L6.10871 10.4204C6.04215 10.3462 6.00553 10.2441 6.0075 10.1382C6.00948 10.0324 6.04987 9.93215 6.11913 9.8612C7.49495 8.54106 9.50996 8.54106 10.8858 9.8612C10.955 9.93221 10.9953 10.0325 10.9972 10.1383Z"
+                                        fill="white" />
+                                </svg>
+                                <svg class="battery" width="27" height="14" viewBox="0 0 27 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.35"
+                                        d="M0.976274 4C0.976274 2.08221 2.53095 0.527543 4.44873 0.527543H20.6732C22.5909 0.527543 24.1456 2.08222 24.1456 4V10C24.1456 11.9178 22.5909 13.4725 20.6732 13.4725H4.44873C2.53095 13.4725 0.976274 11.9178 0.976274 10V4Z"
+                                        stroke="white" stroke-width="1.05509" />
+                                    <path opacity="0.4"
+                                        d="M25.6423 5.38464V9.92963C26.4651 9.5447 27.0001 8.64923 27.0001 7.65714C27.0001 6.66504 26.4651 5.76958 25.6423 5.38464Z"
+                                        fill="white" />
+                                    <path
+                                        d="M2.38696 4.15381C2.38696 3.04924 3.28239 2.15381 4.38696 2.15381H20.7355C21.8401 2.15381 22.7355 3.04924 22.7355 4.15381V9.84612C22.7355 10.9507 21.8401 11.8461 20.7355 11.8461H4.38696C3.28239 11.8461 2.38696 10.9507 2.38696 9.84612V4.15381Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 ps-4 fs-4 text-white fw-normal">
+                        Weather
+                    </div>
+                    <div class="extra">
+                        <div class="search-field">
+                            <div class="search-container">
+                                <input class="px-1 py-1 text-center" type="text" id="search-input" placeholder="Search">
+                                <ul id="search-results" class="search-results"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7 pe-0">
+                            <img src="assets/Images/House 4 3.png" alt="" width="100%">
+                        </div>
+                        <div class="col-5 ps-0 text-center text-white">
+                            <h3 id="City" class="fw-normal mb-0 lh-1 mt-3">Surat</h3>
+                            <div id="temperature" class="fw-lighter lh-1 display-3">19°</div>
+                            <div id="" class="text-muted">Mostly Clear</div>
+                            <div id="H&L" class="text-white fw-lighter">H:24° L:18°</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <p><i class="fa-solid fa-sun"></i> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="assets/weather.js"></script>
+
+
+
+</html>

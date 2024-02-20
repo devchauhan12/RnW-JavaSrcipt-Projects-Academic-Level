@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ATM</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form id="page-1" name="login">
+        <h3>ATM Login</h3>
+
+        <label for="username">Username</label>
+        <input name="user" type="text" placeholder="Username" id="username">
+
+        <label for="password">Pin</label>
+        <input name="pass" type="password" placeholder="PIN" id="PIN">
+
+        <span class="Error"></span>
+        <button type="button" onclick="validate()">Log In</button>
+    </form>
+    <form id="page-2" class="none">
+        <h3 id="pg-2">Welcome </h3>
+        <button type="button" onclick="purpose(value)" value="Withdraw">Withdraw</button>
+        <button type="button" onclick="purpose(value)" value="Deposit">Deposit</button>
+        <button type="button" onclick="purpose(value)" value="Check Balance">Check Balance</button>
+    </form>
+    <form id="page-3" class="none">
+        <h3>Withdrawing Money</h3>
+
+        <label for="username">Amount</label>
+        <input type="number" placeholder="Enter Amount" id="WithdrawAmount">
+
+        <span class="Error"></span>
+        <button type="button" onclick="process(value)" value="Withdraw">Withdraw</button>
+    </form>
+    <form id="page-4" class="none">
+        <h3>Current Balance</h3>
+
+        <label id="balance"></label>
+    </form>
+    <form id="page-5" class="none">
+        <h3>Deposit Money</h3>
+        
+        <label for="username">Amount</label>
+        <input type="number" placeholder="Enter Amount" id="process">
+
+        <span class="Error"></span>
+        <button type="button" onclick="process(value)" value="Deposit">Deposit</button>
+    </form>
+
+    <script src="assets/atm.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <table class="table mt-4 table-striped m-auto text-center">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+        <tfoot id="tfoot">
+
+        </tfoot>
+    </table>
+</body>
+<script src="assets/JS/header.js"></script>
+<script>
+
+    stcart()
+    function stcart() {
+        let InCart = JSON.parse(localStorage.getItem('InCart'))
+        let vhtml = ''
+        let tq = 0, tp = 0;
+        if (InCart) {
+            for (var i = 0; i < InCart.length; i++) {
+                vhtml += `<tr>
+                        <td><img src="${InCart[i].img}" width="50px" height="50px"></td>
+                        <td>${InCart[i].name}</td>
+                        <td>₹ ${InCart[i].price}</td>
+                        <td>
+                            <button onclick="decrease(${i})" class="border-0 bg-dark text-white">-</button>
+                            <input type="number" class="text-center" name="quantity" value="${InCart[i].qty}" disabled>
+                            <button onclick="increase(${i})" class="border-0 bg-dark text-white">+</button>
+                        </td>
+                        <td class="">₹ ${InCart[i].qty * InCart[i].price}</td>
+                        <td class=""></td>
+                     </tr>`
+            }
+            for (var i = 0; i < InCart.length; i++) {
+                tq += InCart[i].qty
+                tp += InCart[i].qty * InCart[i].price
+            }
+            document.getElementById('tbody').innerHTML = vhtml
+            document.getElementById('tfoot').innerHTML = `<tr>
+                                                        <th>TOTAL</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th>${tq}</th>
+                                                        <th>₹ ${tp}</th>
+                                                        <th><button type="submit" onclick="dl()" class="border-0">Clear All</button></th>
+                                                      </tr>`
+        }
+        count()
+    }
+
+    function increase(id) {
+        let InCart = JSON.parse(localStorage.getItem('InCart'))
+        for (let i = 0; i < InCart.length; i++) {
+            if (i == id) { InCart[i].qty++ }
+        }
+        localStorage.setItem("InCart", JSON.stringify(InCart))
+        stcart()
+    }
+    function decrease(id) {
+        let InCart = JSON.parse(localStorage.getItem('InCart'))
+        for (let i = 0; i < InCart.length; i++) {
+            if (i == id) { InCart[i].qty-- }
+            if (InCart[i].qty == 0) { InCart.splice([i], 1) }
+        }
+        localStorage.setItem("InCart", JSON.stringify(InCart))
+        stcart()
+    }
+    function dl(){
+        localStorage.setItem('InCart',"[]");
+        stcart();
+    }
+
+</script>
+
+</html>

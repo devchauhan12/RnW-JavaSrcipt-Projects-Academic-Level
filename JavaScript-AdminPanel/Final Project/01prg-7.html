@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- Fevicon -->
+    <link rel="icon" href="assets/Images/favicon (3).png" type="image/x-icon">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!-- Calendar css -->
+    <link rel="stylesheet" href="assets/css/calendarjs.css">
+
+    <!-- media css -->
+    <link rel="stylesheet" href="assets/css/media.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+
+<>
+    <aside class="sidebar">
+        <div class="logo-details text-center">
+            <img class="light-1 di-none d-lg-inline" src="assets/Images/logo.png" alt="" width="62%">
+            <img class="light-2 di-none ms-1" src="assets/Images/favicon (3).png" width="90%" alt="">
+        </div>
+        <ul class="nav-links p-0">
+            <li class="nav-sides">Dashboard</li>
+            <li class="nav-slides">
+                <a href="index.html" class="d-flex align-items-center">
+                    <span class="nav-icons">
+                        <i class="bi bi-cast"></i>
+                    </span>
+                    <span class="link_name">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-sides mt-3">Applications</li>
+            <li class="nav-slides" id="Apps">
+                <a href="#" class="d-flex active align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-icons">
+                            <i class="bi bi-box"></i>
+                        </span>
+                        <span class="link_name">TSK-1</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+            </li>
+            <ul class="Blocks ps-0 di-none">
+                <li class="nav-slides">
+                    <a href="cards.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-1</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="chat.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-2</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="contacts.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-3</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="calendar.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-4</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-5.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-5</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-6.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-6</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="#" class="d-flex active align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-7</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-8.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-8</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-9.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-9</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-10.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-10</span>
+                    </a>
+                </li>
+                <li class="nav-slides">
+                    <a href="01prg-11.html" class="d-flex align-items-center">
+                        <span class="nav-icons">
+                        </span>
+                        <span class="link_name">Program-11</span>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </aside>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/Slider.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Fullscreen Js Start
+            function toggleFullScreen(elem) {
+                if ((document.fullScreenElement !== undefined && document.fullScreenElement == null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement == null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+                    if (elem.requestFullScreen) {
+                        elem.requestFullScreen();
+                    } else if (elem.mozRequestFullScreen) {
+                        elem.mozRequestFullScreen();
+                    } else if (elem.webkitRequestFullScreen) {
+                        elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                    } else if (elem.msRequestFullscreen) {
+                        elem.msRequestFullscreen();
+                    }
+                } else {
+                    if (document.cancelFullScreen) {
+                        document.cancelFullScreen();
+                    } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                    } else if (document.webkitCancelFullScreen) {
+                        document.webkitCancelFullScreen();
+                    } else if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                    }
+                }
+            };
+            // Fullscreen Js End
+        })
+        if ($(window).width() < 992) {
+            $(".bi-text-left").click(function () {
+                $("aside").toggleClass("Depre");
+            });
+        };
+
+        // Alphabet
+
+        function check() {
+            const costPrice = document.getElementById('buy').value
+            const sellingPrice = document.getElementById('sell').value
+            let profitOrLoss = sellingPrice - costPrice;
+
+            if (profitOrLoss > 0) {
+                document.getElementById('Result').innerHTML = 'There is a profit of ' + profitOrLoss
+            } else if (profitOrLoss < 0) {
+                document.getElementById('Result').innerHTML = 'There is a loss of ' + profitOrLoss
+            } else {
+                document.getElementById('Result').innerHTML = 'There is neither profit nor loss.'
+            }
+        }
+    // Alphabet
+
+    </script>
+
+    </body>
+
+</html>

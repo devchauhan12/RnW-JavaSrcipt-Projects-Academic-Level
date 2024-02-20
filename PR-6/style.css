@@ -1,0 +1,17 @@
+.Image {
+    animation: fadein 2s;
+}
+.Image img{
+    width: 100%;
+    height: 90vh;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

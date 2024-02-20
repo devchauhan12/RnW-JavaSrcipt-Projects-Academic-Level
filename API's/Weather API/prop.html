@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+</script>
+<script>
+    var name = 'surat'
+    var xyz = City()
+    console.log(xyz);
+    async function City() {
+        try {
+            const result = await $.ajax({
+                method: 'GET',
+                url: 'https://api.api-ninjas.com/v1/city?name=' + name,
+                headers: { 'X-Api-Key': 'ZK+PAKoGDKMz3FhuQ/Bd3Q==6lQkWpEA41FNwLvP' },
+                contentType: 'application/json',
+            });
+            return { longitude: result[0].longitude, latitude: result[0].latitude };
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
+</script>
+
+</html>

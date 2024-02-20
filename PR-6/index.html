@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Image">
+        <img src="https://c4.wallpaperflare.com/wallpaper/966/709/249/demon-creature-artwork-fantasy-art-hd-wallpaper-preview.jpg" alt="">
+    </div>
+    <div class="Image">
+        <img src="https://wallpapercrafter.com/desktop6/1578161-Video-Game-League-Of-Legends-Aatrox-League-of-Legends.jpg" alt="">
+    </div>
+    <div class="Image">
+        <img src="https://png.pngtree.com/background/20230517/original/pngtree-fantasy-art-of-a-warrior-demon-standing-in-a-fiery-area-picture-image_2629955.jpg" alt="">
+    </div>
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slide = document.getElementsByClassName("Image");
+        for (i = 0; i < slide.length; i++) {
+            slide[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slide.length) { slideIndex = 1 }
+        slide[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000);
+    }
+</script>
+
+</html>
